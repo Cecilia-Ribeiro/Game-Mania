@@ -1,0 +1,14 @@
+body {background-color: lightgrey;}
+body {background-color: beige; color: blue;}
+/*
+p {color: dimgrey;}
+ul {color: dimgrey;}
+*/
+p {color: red;}
+.verde {color: green;}
+.azul {color: blue;}
+.vermelho {color: red;}
+.amarelo {color: purple !important;}
+.azul .vermelho {background-color: cyan;}
+.azul .vermelho .amarelo{color: yellow;}
+#turquesa {color: turquoise;}
