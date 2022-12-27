@@ -2,14 +2,14 @@
 	<html lang="pt-br">
 		<head>
 			<meta charset="UTF-8" />
-			<title>Meu primeiro site</title>
+			<title>Game Mania</title>
 			<meta name="description" content="Programador Front-End, SENAI" />
 			<meta name="kewords" content="HTML, CSS, Javasript, SENAI" />
 			<meta name="author" content="Anna Cecília" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 			<link rel="stylesheet" type="text/css" href="css/style.css">
-			<link rel="icon" href="banner.png" type="images/PNG" sizes="16x16">
+			<link rel="icon" href="img/banner-logo.png" type="images/PNG" sizes="16x16">
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -18,15 +18,13 @@
 		</head>
 	
 		<body>
-			<button onclick="myFunction()">Clique Aqui</button>
-				<div id="contextText"><p>TExto que vai sumir</p></div>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
             crossorigin="anonymous"></script>
 			<header>
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container-fluid">
-						<input type="image" src="logo-senai1.png" width=8% alt="submit" />
+						<input type="image" src="img/logo-senai1.png" width=8% alt="submit" />
 					  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					  </button>
@@ -74,7 +72,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12 col-md-6">
-							<img src="banner-home.png" class="img-fluid" alt="banner-home">
+							<img src="img/banner-home.png" class="img-fluid" alt="banner-home">
 						</div>
 						<div class="col-12 col-md-6">
 							<section class="texto-menu">
@@ -88,7 +86,7 @@
 			</div>
 			<div class="destaque d-flex align-items-center">
 				<div class="container">
-					<div class="row">
+					<div id="produtos" class="row">
 						<div class="col-12">
 							<section class="texto-destaque">
 								<h2>Que tal conhecer nossas obras em destaque</h2>
@@ -96,28 +94,28 @@
 							</section>
 						</div>
 						<div class="col-3">
-							<img src="pacman1.png" class="img-fluid" alt="img-destaque">
+							<img src="img/pacman1.png" class="img-fluid" alt="img-destaque">
 						</div>
 						<div class="col-3">
-							<img src="pacman2.png" class="img-fluid" alt="img-destaque">
+							<img src="img/pacman2.png" class="img-fluid" alt="img-destaque">
 						</div>
 						<div class="col-3">
-							<img src="pacman3.png" class="img-fluid" alt="img-destaque">
+							<img src="img/pacman3.png" class="img-fluid" alt="img-destaque">
 						</div>
 						<div class="col-3">
-							<img src="pacman4.png" class="img-fluid" alt="img-destaque">
+							<img src="img/pacman4.png" class="img-fluid" alt="img-destaque">
 						</div>
 						<div class="col-3">
-							<img src="pacman5.png" class="img-fluid" alt="img-destaque">
+							<img src="img/pacman5.png" class="img-fluid" alt="img-destaque">
 						</div>
 						<div class="col-3">
-							<img src="pacman6.png" class="img-fluid" alt="img-destaque">
+							<img src="img/pacman6.png" class="img-fluid" alt="img-destaque">
 						</div>
 						<div class="col-3">
-							<img src="pacman7.png" class="img-fluid" alt="img-destaque">
+							<img src="img/pacman7.png" class="img-fluid" alt="img-destaque">
 						</div>
 						<div class="col-3">
-							<img src="pacman8.png" class="img-fluid" alt="img-destaque">
+							<img src="img/pacman8.png" class="img-fluid" alt="img-destaque">
 						</div>
 						<div class="col-12">
 							<a href="#">Saiba mais</a>
@@ -130,13 +128,13 @@
 			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="mario.jpg" class="d-block w-100" alt="exemplo-carousel">
+						<img src="img/mario.jpg" class="d-block w-100" alt="exemplo-carousel">
 					</div>
 					<div class="carousel-item active">
-						<img src="luigi.jpg" class="d-block w-100" alt="exemplo-carousel">
+						<img src="img/luigi.jpg" class="d-block w-100" alt="exemplo-carousel">
 					</div>
 					<div class="carousel-item active">
-						<img src="yoschi.jpg" class="d-block w-100" alt="exemplo-carousel">
+						<img src="img/yoschi.jpg" class="d-block w-100" alt="exemplo-carousel">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -150,9 +148,13 @@
 		    </div>
 			<div class="galeria d-flex align-items-center d-none d-lg-block"></div>
 			<div id="carouselExampleControls" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"></div>
+			<script type="text/javascript" src="js/scripts.js"></script>
+			<script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
 
-		</body>
-		<script type="text/javascript" src="js/scripts.js"></script>
-		<script type="text/javascript" src="js/jquery-v3.6.3.min.js"></script>
-		
+			<footer>
+				<div class="container-fluid">
+					<button onclick="topo()" id="botaoTopo" class="btn btn-primary">Ir para o topo</button>
+				</div>
+			</footer>
+		</body>		
 	</html> 
