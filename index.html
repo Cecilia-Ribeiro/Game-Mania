@@ -1,160 +1,290 @@
 <!DOCTYPE html>
-	<html lang="pt-br">
-		<head>
-			<meta charset="UTF-8" />
-			<title>Game Mania</title>
-			<meta name="description" content="Programador Front-End, SENAI" />
-			<meta name="kewords" content="HTML, CSS, Javasript, SENAI" />
-			<meta name="author" content="Anna Cecília" />
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
 
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-			<link rel="icon" href="img/banner-logo.png" type="images/PNG" sizes="16x16">
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-		</head>
-	
-		<body>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
-            crossorigin="anonymous"></script>
-			<header>
-				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-					<div class="container-fluid">
-						<input type="image" src="img/logo-senai1.png" width=8% alt="submit" />
-					  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<head>
+	<meta charset="UTF-8" />
+	<title>Home - Game Mania</title>
+	<meta name="description" content="Programador Front-End, SENAI" />
+	<meta name="kewords" content="HTML, CSS, Javasript, SENAI" />
+	<meta name="author" content="Anna Cecília" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/banner-logo.png" type="images/PNG" sizes="16x16">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+	<div class="container-principal" id="topo">
+		<header>
+
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html"><img src="img/banner-logo.png"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
-					  </button>
-					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						  <li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">Jogos</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="celulares/cel_acessorios.html">Celulares</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link pcgamer" href="#">Pc Gamer</a>
-						  </li>
-						  <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="hardware.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							  Hardware
-							</a>
-							<ul class="dropdown-menu">
-							  <li><a class="dropdown-item" href="#">Action</a></li>
-							  <li><a class="dropdown-item" href="#">Another action</a></li>
-							  <li><hr class="dropdown-divider"></li>
-							  <li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">Contato</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="login.html">Login</a>
-						  </li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="produtos.html" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									Produtos
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="produtos.html#section-vendidos">Mais Vendidos</a>
+									</li>
+									<li><a class="dropdown-item" href="produtos.html#section-lançamento">Novidades</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="produtos.html">Todos os Produtos</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Contato.html">Contato</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
 						</ul>
 						<form class="d-flex" role="search">
-						  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						  <button class="btn btn-outline-success" type="submit">Search</button>
+							<input class="form-control me-2" type="search" placeholder="O que deseja buscar?"
+								aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Buscar</button>
 						</form>
-					  </div>
 					</div>
-				  </nav>
-			</header>
-			<div class="banner-home d-flex align-items-center">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<img src="img/banner-home.png" class="img-fluid" alt="banner-home">
-						</div>
-						<div class="col-12 col-md-6">
-							<section class="texto-menu">
-								<h1>Venha conhecer nosso diferencial</h1>
-								<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus est voluptates illo iusto dolor iste corrupti ullam tatione magni, et spiente obcaecati vel, voluptatum fugit crporis esse consequeentur nulaa!</p>
-							</section>
-							<a href="#" target="_blank">Saiba mais</a>
-						</div>
-					</div>	
+				</div>
+			</nav>
+		</header>
+	</div>
+	<div class="banner-home d-flex align-items-center">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<img src="img/banner-home.png" class="img-fluid" alt="banner-home">
+				</div>
+				<div class="col-12 col-md-6">
+					<section class="texto-menu">
+						<h1>Venha conhecer nosso diferencial</h1>
+						<p class="texto">      A Game Mania é a maior loja de Gamers da internet! Contamos com as maiores novidades de produtos da marca Pacman. Atuando no ramo desde 2023, o maior compromisso da nossa loja é satisfazer as expectativas dos nossos clientes, promovendo uma experiência única e inesquecível para cada pessoa! Quer saber mais sobre o mundo dos Gamers? Clique no link abaixo e confira os termos mais buscados da atualidade. </p>
+					</section>
+					<a href="#triopopup">Blog Gamer</a>
 				</div>
 			</div>
-			<div class="destaque d-flex align-items-center">
-				<div class="container">
-					<div id="produtos" class="row">
-						<div class="col-12">
-							<section class="texto-destaque">
-								<h2>Que tal conhecer nossas obras em destaque</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus est voluptates illo iusto dolor iste corrupti ullam tatione magni, et spiente obcaecati vel, voluptatum fugit crporis esse consequeentur nulaa!</p>
-							</section>
-						</div>
-						<div class="col-3">
-							<img src="img/pacman1.png" class="img-fluid" alt="img-destaque">
-						</div>
-						<div class="col-3">
-							<img src="img/pacman2.png" class="img-fluid" alt="img-destaque">
-						</div>
-						<div class="col-3">
-							<img src="img/pacman3.png" class="img-fluid" alt="img-destaque">
-						</div>
-						<div class="col-3">
-							<img src="img/pacman4.png" class="img-fluid" alt="img-destaque">
-						</div>
-						<div class="col-3">
-							<img src="img/pacman5.png" class="img-fluid" alt="img-destaque">
-						</div>
-						<div class="col-3">
-							<img src="img/pacman6.png" class="img-fluid" alt="img-destaque">
-						</div>
-						<div class="col-3">
-							<img src="img/pacman7.png" class="img-fluid" alt="img-destaque">
-						</div>
-						<div class="col-3">
-							<img src="img/pacman8.png" class="img-fluid" alt="img-destaque">
-						</div>
-						<div class="col-12">
-							<a href="#">Saiba mais</a>
-						</div>
+		</div>
+	</div>
+
+	<section  class="container-fluid">
+		<div class="pop-up1">
+			<div class="text">
+				<h3>Missão</h3>
+				<p> Nossa <b>missão</b> é inspirar e valorizar a paixão pela tecnologia, jogos, conteúdos, entretenimento e inovação, causando uma emoção inédita, criando experiências e prazeres.</p>
+			</div>
+			<div class="text">
+				<h3>Visão</h3>
+				<p>A <b>visão</b> da empresa é de ampliar o público-alvo e as nossas ações no mundo gamer e tecnológico.</p><br>
+			</div>
+			<div class="text">
+				<h3>Valores</h3>
+				<p>Os <b>valores</b> envolvem, ética, inovação, respeito aos clientes, respeito à lei.</p><br>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section id="section-banners" class="container-fluid">
+		<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/mario.jpg" class="d-block w-100" alt="Mário">
+				</div>
+				<div class="carousel-item">
+					<img src="img/luigi.jpg" class="d-block w-100" alt="Luigi">
+				</div>
+				<div class="carousel-item">
+					<img src="img/yoschi.jpg" class="d-block w-100" alt="Yoschi">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Próximo</span>
+			</button>
+		</div>
+
+		<div class="galeria d-flex align-items-center d-none d-lg-block"></div>
+		<div id="carouselExampleControls" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"></div>
+	</section>
+
+	<section id="section-vendidos" class="container-fluid">
+		<a name="section-vendidos"></a>
+		<h3>CAMPEÕES DE VENDAS</h3>
+		<div class="card-group">
+			<div class="card" style="width: 18rem;">
+				<img src="img/pacman1.png" class="card-img-top" alt="Pacman 1">
+				<div class="card-body">
+					<h5 class="card-title">Pacman ET de varginha </h5>
+					<p class="card-text"> Eu vim para fazer amigos!</p>
+					<p class="preco"> R$ 49,99</p>
+					<p>
+						<input type="button" value="Comprar" class="btn btn-primary" id="bt-comprar"
+							onclick="comprar()" />
+					</p>
 					
-					</div>
 				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="img/pacman2.png" class="card-img-top" alt="Pacman 2">
+				<div class="card-body">
+					<h5 class="card-title">Pacman Patamon</h5>
+					<p class="card-text"> Este pacman proteje todos ao seu redor!</p>
+					<p class="preco"> R$ 79,99</p>
+					<p>
+						<input type="button" value="Comprar" class="btn btn-primary" id="bt-comprar"
+							onclick="comprar()" />
+					</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="img/pacman3.png" class="card-img-top" alt="Pacman 3">
+				<div class="card-body">
+					<h5 class="card-title">Pacman Coringa</h5>
+					<p class="card-text"> Vamos colocar um sorriso nesse rosto!</p>
+					<p class="preco"> R$ 109,99</p>
+					<p>
+						<input type="button" value="Comprar" class="btn btn-primary" id="bt-comprar"
+							onclick="comprar()" />
+					</p>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="img/pacman4.png" class="card-img-top" alt="Pacman 4">
+				<div class="card-body">
+					<h5 class="card-title">Pacman Rambo</h5>
+					<p class="card-text"> Este é o Soldado Destruidor!</p>
+					<p class="preco"> R$ 39,99</p>
+					<p>
+						<input type="button" value="Comprar" class="btn btn-primary" id="bt-comprar"
+							onclick="comprar()" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<a href="produtos.html" target="_blank">Todos os produtos</a>
 
-			</div>	
-			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="img/mario.jpg" class="d-block w-100" alt="exemplo-carousel">
-					</div>
-					<div class="carousel-item active">
-						<img src="img/luigi.jpg" class="d-block w-100" alt="exemplo-carousel">
-					</div>
-					<div class="carousel-item active">
-						<img src="img/yoschi.jpg" class="d-block w-100" alt="exemplo-carousel">
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Anterior</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Próximo</span>
-				</button>
-		    </div>
-			<div class="galeria d-flex align-items-center d-none d-lg-block"></div>
-			<div id="carouselExampleControls" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"></div>
-			<script type="text/javascript" src="js/scripts.js"></script>
-			<script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+	</section>
 
-			<footer>
-				<div class="container-fluid">
-					<button onclick="topo()" id="botaoTopo" class="btn btn-primary">Ir para o topo</button>
-				</div>
-			</footer>
-		</body>		
-	</html> 
+	<section id="triopopup" class="container-fluid">
+		<h3>BLOG MANIA: Os assuntos mais comentados no Mundo Gamer!</h3>
+		<div id="openmodal" class="modalDialog">
+			<div>
+				<a href="#close" class="close">X</a>
+				<h1>Tudo sobre Html</h1>
+				<p><strong>HTML</strong> (abreviação para a expressão inglesa <i>HyperText Markup Language, que
+						significa
+						Linguagem de Marcação de Hipertexto)</i> é uma linguagem de marcação utilizada na construção de
+					páginas na Web. Documentos HTML podem ser interpretados por navegadores. - <i> wikipedia.org -
+						acesso
+						01/2023</i></p>
+				<img src="img/html5.png" alt="logo html5">
+			</div>
+		</div>
+
+		<div id="openmodal1" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h1>Tecnologia - Realidade Aumentada</h1>
+				<p>De uma forma simples, <b> Realidade Aumentada </b> é uma tecnologia que permite que o mundo virtual
+					seja
+					misturado ao real, possibilitando maior interação e abrindo uma nova dimensão na maneira como nós
+					executamos tarefas, ou mesmo as que nós incubimos às máquinas. Assim, se você pensava que objetos
+					pulando para fora da tela eram elementos de filmes de ficçõa científica, está na hora de mudas seus
+					conceitos. Aliás, o que acontece com a <b> Realidade Aumentada</b> é o contrário: você pulará para
+					dentro do mundo virtual para interagir com objetos que só estão limitados à sua imaginação. -
+					<i>tecmundo.com.br/realidade-aumentada - acesso 01/2023</i>
+				</p>
+			</div>
+		</div>
+
+		<div id="openmodal2" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h1>Acessibilidade</h1>
+				<p><b>Acessibilidade</b> na web significa que pessoas com deficiência podem usar a web. Mais
+					especificadamente, a acessibilidade na web significa que pessoas com deficiência podem perceber,
+					entender, navegar, interagir, e construir para a web. E mais. Ela também beneficia outras pessoas,
+					incluindo pessoas idosas com capacidades em mudança devido ao envelhecimento - <i>w3c.br/ - acesso
+						01/2023</i> </p>
+			</div>
+	</section>
+
+	<div class="pop-up">
+		<div class="text">
+			<h3>Tudo sobre Html</h3>
+			<p>Saiba o que é Html, e como sua empresa pode usufruis de sites dinâmicos e funcionais. - <a
+					href="#openmodal">Clique aqui</a>.</p>
+		</div>
+		<div class="text">
+			<h3>Tecnologia</h3>
+			<p>Você sabe o que é realidade aumentada? Entenda como essa nova tecnologia funciona. - <a
+					href="#openmodal1">Clique aqui</a>.</p>
+		</div>
+		<div class="text">
+			<h3>Acessibilidade</h3>
+			<p>Torne seu site acessível utilizando 5 dicas indispensáveis para qualquer site. - <a
+					href="#openmodal2">Clique aqui</a>.</p>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+	<noscript>You need to enable JavaScript to view the full site</noscript>
+	<footer>
+
+		<p>Desenvolvido por Anna Cecília</p>
+
+		<div id="endereço" class="footer-text">
+			<img src="img/banner-logo.png" alt="logo do Game Mania" id="banner-logo"> <br>
+			<img src="img/logo-senai1.png" alt="logo do Senai" id="logo-senai">
+
+		</div>
+
+		<div id="conta-data" class="footer-text">
+			<h6><img src="img/icoadress.png" alt="endereço">Recife - Pernambuco</h6>
+			<h6><img src="img/icoTelefone.png" alt="telefone">+55 81 98888-8888</h6><br>
+			<h5>Encontre o Game Mania nas redes sociais</h5>
+			<h6><img src="img/iconemail.png" alt="email">contato@gamemania.com.br</h6>
+			<h6><img src="img/icoface.png" alt="facebook">facebook.com/gamemania</h6>
+			<h6><img src="img/icoinsta.png" alt="instagram">@GameMania</h6>
+
+		</div>
+
+		<div id="voltar-topo">
+			<button onclick="topo()" id="botaoTopo" class="btn btn-primary">Ir para o topo</button>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Contato - Game Mania</title>
+	<meta name="description" content="Programador Front-End, SENAI" />
+	<meta name="kewords" content="HTML, CSS, Javasript, SENAI" />
+	<meta name="author" content="Anna Cecília" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/banner-logo.png" type="images/PNG" sizes="16x16">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="img/banner-logo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="produtos.html" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Produtos
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="produtos.html#section-vendidos">Mais Vendidos</a>
+								</li>
+								<li><a class="dropdown-item" href="produtos.html#section-lançamento">Novidades</a>
+								</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="produtos.html">Todos os Produtos</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contato.html">Contato</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="O que deseja buscar?"
+							aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid">
+		<h1>Entre em contato conosco!</h1>
+		<p>Mande uma mensagem e tire suas dúvidas!</p>
+	</div>
+
+
+	<main>
+		
+		<section id="txt-contato">
+			<div class="img-titulo"><img src="img/astronauta.jpg" alt="imagem de contato"></div>
+			<form name="meu-form" id="meu-form">
+				<p class="nome">
+					<label for="name">Nome:</label><br>
+					<input type="text" id="nomeid" placeholder="Ex: Fulano da Silva" required="required" name="nome" />
+				</p>
+				<p class="fone">
+					<label for="fone">Celular:</label><br>
+					<input type="phone" id="foneid" placeholder="(xx) xxxxx-xxxx" name="fone" />
+				</p>
+				<p>
+					<label for="email">E-mail:</label><br>
+					<input type="email" id="emailid" placeholder="fulano@gmail.com" name="email" required />
+				</p>
+				<p>
+					<textarea placeholder="mensagem" required="required"></textarea>
+				</p>
+				<p id="meu-form">
+					<button type="submit" form="meu-form">Enviar</button>
+					<button type="reset" form="meu-form">Limpar</button>
+				</p>
+
+
+			</form>
+		</section>
+	</main>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery-script.js"></script>
+
+
+	<footer>
+
+		<p>Desenvolvido por Anna Cecília</p>
+
+		<div id="endereço" class="footer-text">
+			<img src="img/banner-logo.png" alt="logo do Game Mania" id="banner-logo"> <br>
+			<img src="img/logo-senai1.png" alt="logo do Senai" id="logo-senai">
+
+		</div>
+
+		<div id="conta-data" class="footer-text">
+			<h6><img src="img/icoadress.png" alt="endereço">Recife - Pernambuco</h6>
+			<h6><img src="img/icoTelefone.png" alt="telefone">+55 81 98888-8888</h6><br>
+			<h5>Encontre o Game Mania nas redes sociais</h5>
+			<h6><img src="img/iconemail.png" alt="email">contato@gamemania.com.br</h6>
+			<h6><img src="img/icoface.png" alt="facebook">facebook.com/gamemania</h6>
+			<h6><img src="img/icoinsta.png" alt="instagram">@GameMania</h6>
+
+		</div>
+
+		<div id="voltar-topo">
+			<button onclick="topo()" id="botaoTopo" class="btn btn-primary">Ir para o topo</button>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<title>Game Mania</title>
+	<title>Login - Game Mania</title>
 	<meta name="description" content="Programador Front-End, SENAI" />
 	<meta name="kewords" content="HTML, CSS, Javasript, SENAI" />
 	<meta name="author" content="Anna Cecília" />
@@ -20,9 +20,10 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
-				<input type="image" src="img/logo-senai1.png" width=8% alt="submit" />
+				<a class="navbar-brand" href="index.html"><img src="img/banner-logo.png"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
@@ -33,116 +34,116 @@
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Jogos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="celulares/cel_acessorios.html">Celulares</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link pcgamer" href="#">Pc Gamer</a>
-						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="hardware.html" role="button"
+							<a class="nav-link dropdown-toggle" href="produtos.html" role="button"
 								data-bs-toggle="dropdown" aria-expanded="false">
-								Hardware
+								Produtos
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="produtos.html#section-vendidos">Mais Vendidos</a>
+								</li>
+								<li><a class="dropdown-item" href="produtos.html#section-lançamento">Novidades</a>
+								</li>
 								<li>
 									<hr class="dropdown-divider">
 								</li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
+								<li><a class="dropdown-item" href="produtos.html">Todos os Produtos</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contato</a>
+							<a class="nav-link" href="Contato.html">Contato</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Login</a>
+							<a class="nav-link" href="login.html">Login</a>
 						</li>
 					</ul>
 					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
+						<input class="form-control me-2" type="search" placeholder="O que deseja buscar?"
+							aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
 					</form>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<h1>Cadastre-se ou faça seu Login</h1>
-	<p>Tenha a melhor experiência com uma loja de gamers!</p>
+
+	<div class="container-fluid">
+		<h1>Cadastre-se ou faça seu Login</h1>
+		<p>Tenha a melhor experiência com uma loja de gamers!</p>
+	</div>
+
+
 	<main>
 		<section id="section-login">
 			<h1>Login</h1>
-			<div class="row">
-				<!--mudar do centro-->
-				<form method="post" action="" class="form" id="formLogin">
+			<div class="d-flex justify-content-center">
+				<form method="post" action="" id="login">
 					<div class="row mb-3">
-						<label for="usuario" class="col-sm-2 col-form-label">Usuário</label>
-						<div class="col-sm-5">
-							<input id="usuario" name="usuario" required="required" type="text" placeholder="Insira o seu usuário" value="" class="form-control" />
-						</div>
+						<label for="usuario">Usuário:</label>
+						<input id="usuario" name="usuario" required="required" type="text"
+							placeholder="Insira o seu usuário" value="" class="form-control" />
 					</div>
+
 					<div class="row mb-3">
-						<label for="senha" class="col-sm-2 col-form-label">Senha </label>
-						<div class="col-sm-5">
-							<input id="senha" name="senha" required="required" type="password"
-								placeholder="Insira sua senha" class="form-control" />
-						</div>
+						<label for="senha">Senha: </label>
+						<input id="senha" name="senha" required="required" type="password"
+							placeholder="Insira sua senha" class="form-control" />
 					</div>
+					
 					<p>
 						<input type="button" value="Login" class="btn btn-primary" id="bt-login" onclick="login()" />
+
 					</p>
 				</form>
-
 			</div>
 		</section>
+
 		<section id="section-cadastro">
 			<div id="botao-cadastrar">
 				<button type="button" class="btn btn-info">Não é cadastrado ainda? Cadastre-se</button>
 			</div>
+
 			<div id="form-cadastrar">
 				<h1>Criar minha conta</h1>
 				<p>Informe os seus dados abaixo para criar sua conta no Game Mania</p>
-				<div class="row">
-					<form method="post" action="" class="form" id="formCadastro">
+
+				<div class="d-flex justify-content-center">
+					<form method="post" action="" id="login">
+
 						<div class="row mb-3">
-							<label for="nome" class="col-sm-2 col-form-label">Nome</label>
-							<div class="col-sm-5">
+							<label for="nome" class="col-sm-2 col-form-label">Nome:</label>
+							<div class="col-sm-10">
 								<input id="nome" name="nome" required="required" type="text" placeholder="João da Silva"
 									value="" class="form-control">
 							</div>
 						</div>
 						<div class="row mb-3">
-							<label for="genero" class="col-sm-2 col-form-label">Gênero</label>
-							<div class="col-sm-5">
-								<select id="genero" name="genero" required="required" class="form-control" value="">
-									<option></option>
-									<option>Prefiro não identificar</option>
-									<option>Feminino</option>
-									<option>Masculino</option>
-								</select>
+							<label for="genero" class="col-sm-2 col-form-label">Gênero:</label>
+							<div class="col-sm-10">
+
+								<TD><INPUT TYPE=radio NAME="genero" VALUE="fem">Feminino
+									<INPUT TYPE=radio NAME="genero" VALUE="masc">Masculino
+									<INPUT TYPE=radio NAME="genero" VALUE="no">Não Responder
+								</TD>
 							</div>
 						</div>
 						<div class="row mb-3">
-							<label for="dataDeNascimento" class="col-sm-2 col-form-label">Data de Nascimento</label>
-							<div class="col-sm-5">
-								<input id="dataDeNascimento" name="dataDeNascimento" required="required" type="date"
-									value="" class="form-control">
+							<label for="aniversario" class="col-sm-4 col-form-label">Aniversário:</label>
+							<div class="col-sm-8">
+								<input id="aniversario" name="aniversario" required="required" type="date" value=""
+									class="form-control">
 							</div>
 						</div>
 						<div class="row mb-3">
-							<label for="email" class="col-sm-2 col-form-label">E-mail</label>
-							<div class="col-sm-5">
+							<label for="email" class="col-sm-2 col-form-label">E-mail:</label>
+							<div class="col-sm-10">
 								<input id="email" name="email" required="required" type="email"
 									placeholder="example@example.com" value="" class="form-control">
 							</div>
 						</div>
 						<div class="row mb-3">
-							<label for="senha" class="col-sm-2 col-form-label">Senha</label>
-							<div class="col-sm-5">
+							<label for="senha" class="col-sm-2 col-form-label">Senha:</label>
+							<div class="col-sm-10">
 								<input id="senha" name="senha" required="required" type="password"
 									placeholder="mínimo de 6 caracteres" value="" class="form-control">
 							</div>
@@ -150,25 +151,50 @@
 						<p>
 							<input type="button" value="Cadastrar" class="btn btn-primary" id="bt-cadastrar"
 								onclick="cadastro()" />
+							<input type="reset" value="Limpar" class="btn btn-primary" id="bt-limpa"/>							
 						</p>
 					</form>
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<div class="container-fluid">
-			<button onclick="topo()" id="botaoTopo" class="btn btn-primary">Ir para o topo</button>
-		</div>
-	</footer>
-	<script type="text/javascript" src="js/scripts.js"></script>
 
-	<script type="text/javascript" src="js/jquery-3.6.3.min.js"></script> <!--ver o funcionamento do jquery-->
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.6.1.js"
 		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-
 	<script type="text/javascript" src="js/jquery-script.js"></script>
+
+
+	<footer>
+
+		<p>Desenvolvido por Anna Cecília</p>
+
+		<div id="endereço" class="footer-text">
+			<img src="img/banner-logo.png" alt="logo do Game Mania" id="banner-logo"> <br>
+			<img src="img/logo-senai1.png" alt="logo do Senai" id="logo-senai">
+
+		</div>
+
+		<div id="conta-data" class="footer-text">
+			<h6><img src="img/icoadress.png" alt="endereço">Recife - Pernambuco</h6>
+			<h6><img src="img/icoTelefone.png" alt="telefone">+55 81 98888-8888</h6><br>
+			<h5>Encontre o Game Mania nas redes sociais</h5>
+			<h6><img src="img/iconemail.png" alt="email">contato@gamemania.com.br</h6>
+			<h6><img src="img/icoface.png" alt="facebook">facebook.com/gamemania</h6>
+			<h6><img src="img/icoinsta.png" alt="instagram">@GameMania</h6>
+
+		</div>
+
+		<div id="voltar-topo">
+			<button onclick="topo()" id="botaoTopo" class="btn btn-primary">Ir para o topo</button>
+		</div>
+	</footer>
 </body>
 
 </html>

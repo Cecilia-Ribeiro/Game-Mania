@@ -5,6 +5,14 @@ body{
     font-family: 'Anton', sans-serif;
 }
 
+header img {
+    height: 110px;
+    width: 110px;
+}
+
+/* Propriedades do título*/
+
+
 .banner-home{
     width: 100%;
     height: 600px;
@@ -16,6 +24,7 @@ body{
     height: 400px;
     margin: 0 auto;
     display: table;
+    border-radius: 25%;
 }
 
 .banner-home .texto-menu{
@@ -32,6 +41,7 @@ body{
     font-size: 18px;
     margin: 30px 0px;
     width: 90%;
+    text-align: justify;
 }
 
 .banner-home .texto-menu .btn-banner{
@@ -62,24 +72,23 @@ body{
     }
 }
 
+nav {position:absolute; right: 10px; bottom: 0px;}
+nav ul li {float:left; color: #b88b8b; width: auto; margin: 0.8em; font-size: 18px; font-family: 'verdana'; list-style-type: style none;;}
+nav ul li a {text-decoration: none; color: #bbb;}
+nav div div ul li a:hover{color: #b13030;}
 
-#produtos img{
-    width: 50%;
-}
 
-#carouselExampleControls{
+
+#carouselExampleAutoplaying{
     width: 55%;
     margin: 0 auto;
     display: table;
 }
 
-#carouselExampleControls img{
+#carouselExampleAutoplaying img{
     width: 50%;
     height: 450px;
-}
-
-#botaoTopo button{
-    align-items: center;
+    margin: 35px;
 }
 
 @media  screen and (max-width: 998px) {
@@ -102,4 +111,335 @@ body{
 
 @media screen and (min-width: 1024px) and (max-width: 1520px) {
     
+}
+
+/* definir as propriedades dos pop'ups */
+
+.pop-up1 .text {
+    width: 30%;
+    margin: 10px;
+    padding: 50px 30px 30px 25px;
+
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+.pop-up .text {
+    width: 30%;
+    margin: 1%;
+    position: relative;
+    float: left;
+
+}
+
+#triopopup h3{
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: 'verdana';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(181, 9, 9 , 0.8);
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: none;
+}
+
+.modalDialog:target {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog div{
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.modalDialog p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.modalDialog img {
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+.close {
+    background-color: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.close:hover {
+    background-color: #b50909;
+}
+
+.container-fluid{
+    position: relative; 
+    top: 0;
+    margin: 15px auto;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+/* Produtos Vendidos*/
+
+#section-vendidos {
+    text-align: center;
+    
+}
+
+#section-vendidos h3{
+    font-weight: bold;
+    padding: 20px;
+}
+
+#section-vendidos img{
+    height: 250px;
+    width:auto;
+    border-radius: 10px;
+}
+
+#section-vendidos .card{
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#section-vendidos .preco{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Produtos lançamentos*/
+
+#section-lançamento {
+    text-align: center;
+}
+
+#section-lançamento h3{
+    font-weight: bold;
+    padding: 20px;
+}
+
+#section-lançamento img{
+    height: 250px;
+    width:auto;
+    border-radius: 10px;
+}
+
+#section-lançamento .card{
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#section-lançamento .preco{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* página de login */
+
+#section-login{
+    margin-top: 100px;
+}
+
+#section-login h1{
+    text-align: center;
+}
+
+#section-login input{
+    width: 100%;
+}
+
+/* formulário de cadastro*/
+
+#section-cadastro{
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#form-cadastrar {
+    padding: 50px;
+    display: none;
+}
+
+/* definir as propriedades da página contato */
+#txt-contato {
+    width: 100%;
+    height: 100%;
+}
+
+.img-titulo {
+    width: 45%;
+    height: 10px;
+    position: relative;
+    float: left;
+    padding: 2%;
+}
+
+#txt-contato form {
+    width: 50%;
+    position: relative;
+    float: left;
+    background-color: #fff;
+    padding: 2%;
+    top: 5%;
+    min-height: 400px;
+    
+}
+
+#txt-contato form label {
+    font-weight: bold;
+}
+
+#txt-contato form input {
+    max-width: 100%;
+    width: 80%;
+    height: 30px;   
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: solid #837889 1px;
+    padding-left: 1%;
+}
+
+#txt-contato form textarea {
+    max-width: 100%;
+    width: 80%;
+    border: solid #837889 1px;
+    padding-left: 1%;
+    min-width: 100px ;
+}
+
+#txt-contato form button {
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #837889;
+    border-color: #000;
+    border-radius: 25%;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0 5px 0;
+    margin-left: 5px;
+    font-weight: bold;
+    
+    
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#txt-contato img {
+    width: 350px;
+    height: 350px;
+    border-radius: 40%;
+    margin: 45px;
+}
+
+
+
+/*rodapé*/
+footer {
+    padding: 2%;
+    width: 100%;
+    height: 320px;
+    background-color: #cdd0f5;
+    color: #0f0d4d;
+    position:relative;
+    float: left;
+    font-family: 'verdana';
+}
+
+footer p{
+    font-weight: bold;
+     
+    text-align: center;
+ 
+}
+
+footer .footer-text {
+    width: 30%;
+    margin: 1%;
+    position: relative;
+    float: left;
+}
+
+
+/* definir propriedades do rodapé */
+#voltar-topo{
+   
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+}
+/*contatos do rodapé*/
+#conta-data {
+    width: 40%;
+    position: relative;
+    float: right;
+    padding: 1.5%;
+    color: #0f0d4d;
+    top: 5%;
+    margin-left: 1.5%;
+    height: 200px;
+    text-align:right;
+}
+
+#conta-data h6 img{
+    width: 30px;
+}
+
+#endereço h6 img{
+    width: 30px;
+}
+
+#endereço img{
+    width: 120px;
+    right: 25px;
+
+}
+
+#conta-data h5 {
+    font-weight: bold;
+
 }

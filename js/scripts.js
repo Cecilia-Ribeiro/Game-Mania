@@ -1,37 +1,4 @@
-
-//document.body.style.background = "#cccccccc";
-//document.body.style.backgroundImage = "url('img/background.jpg')"
-
-function myFunction(){
-    var x = document.getElementById('contextText');
-    if (x.style.display ==='none'){
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }    
-}
-
-$('#formExample, #nome, #genero, #dataDeNascimento, #email, #senha').change(function(){
-    var nome = $('#nome').val();
-    var genero = $('#genero').val();
-    var dataDeNascimento = ('#dataDeNascimento').val();
-    var email = ('#email').val();
-    var senha = ('#senha').val();
-    if(nome != null && genero != null && dataDeNascimento != null && email != null && senha != null){
-        $('.btn').removeAttr('disabled');
-    }else{
-        $('.btn').attr('disabled');
-    }
-});
-
-$('#formLogin').on('submit', function(){
-    $(this).find('input[required=true]').each(function(){
-        if(!$(this).val()){
-            alert('O campo ' + $(this).attr('id') + ' é obrigatório!');
-        }
-    });
-});
-
+'use strict'
 function topo() {
     window.scrollTo({
         top: 0,
@@ -40,25 +7,30 @@ function topo() {
     })
 }
 
+//validação de login
+function login() {
+    var logado = 0;
+    var usuario = document.getElementById("usuario").value;
+    var senha = document.getElementById("senha").value;
+    
+    if(usuario == 'admin' && senha == '123456'){
+        window.location = "index.html";
+        logado = 1;
+    }
 
-/*$('#formLogin').ready(function(){
-    $("input").blur(function(){
-        if($(this).val() == "")
-            {
-                $(this).css({"border-color": "#F00", "padding":"2px"});
-            }
-    });
-})*/
+    if(logado == 0){
+        alert("Ops! Acesso Negado. Dados incorretos!")
+    }
+}
 
-/*$('#formLogin, #nome, #dataDeNascimento, #email, #senha'). change(function botao() {
-    var nome = $('#nome').val();
-    var dataDeNascimento = $('#dataDeNascimento').val();
-    var email = $('#email').val();
-    var senha = $('#senha').val();
-    if(nome != null && dataDeNascimento != null && email != null && senha != null){
-        $('.btn').removeAttr('disabled');
-    } else {
-        $('.btn').attr('disabled');
-    } 
-});*/
+//Ativar alert no botão cadastrar
+function cadastro() {
+    alert("Cadastrado com sucesso!");
+    window.location.href = "index.html";
+}
 
+//Ativar botão comprar
+function comprar() {
+    alert("Compra efetuada com sucesso!");
+    
+}
